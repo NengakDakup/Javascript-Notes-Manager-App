@@ -28,8 +28,7 @@ header > h1 {
 
 header > label > i.fa-plus {
   position: absolute;
-  height: 52px;
-  width: 52px;
+  padding: 12px;
   top: 15px;
   right: 20px;
   z-index: 2;
