@@ -147,8 +147,8 @@ ul.notes:empty:after {
   outline-color: purple;
 
 }
+.create_note > .create_note_btn {
 
-.create_note > .craete_note_btn {
   border: none;
   height: 35px;
   width: 35px;
@@ -197,4 +197,9 @@ ul.notes:empty:after {
 
 #create_note_toggle:checked ~ header .create_note {
   display: unset;
+}
+
+#create_note_toggle:checked ~ header label i.fa-plus{
+  transform: rotateZ(45deg);
+  border-radius: 50%;
 }
