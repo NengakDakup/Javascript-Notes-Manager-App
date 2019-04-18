@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Notes Manager App</title>
+    <link rel="stylesheet" href="assets/css/notes.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+  </head>
+  <body>
+    <header>
+      <h1><i class="fa fa-list"></i> Notes Manager</h1>
+      <button type="button" id="addItem"><i class="fa fa-plus"></i></button>
+
+      <div class="create_note">
+        <input type="text" placeholder="Enter note title here" class="create_note_input">
+        <button type="button" class="craete_note_btn"><i class="fa fa-plus"></i></button>
+      </div>
+
+      <div class="note_editor">
+        <input type="text" placeholder="Enter note title here" class="create_note_input">
+        <textarea name="name" rows="20" cols="40"></textarea>
+        <button type="button" class="craete_note_btn">Save Note <i class="fa fa-plus"></i></button>
+        <button type="button" class="craete_note_btn">Discard Note <i class="fa fa-trash-alt"></i></button>
+      </div>
+
+    </header>
+
+    <div class="container">
+      <ul class="notes">
+        <li>
+          EET219 Lecture Notes
+          <div class="buttons">
+            <button type="button" class="edit"><i class="fa fa-edit"></i></button>
+            <button type="button" class="remove"><i class="fa fa-trash-alt"></i></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  <script src="assets/js/notes.js" charset="utf-8"></script>
+</html>

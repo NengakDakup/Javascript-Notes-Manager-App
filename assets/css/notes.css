@@ -1,0 +1,190 @@
+body {
+  padding: 0;
+  padding-top: 70px;
+  margin: 0;
+  font-family: serif;
+  background: #edf0f1;
+}
+
+header {
+  width: -webkit-fill-available;
+  height: 40px;
+  padding: 7px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #9c27b0;
+  color: #fff;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+header > h1 {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+header > button {
+  position: absolute;
+  height: 52px;
+  width: 52px;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: none;
+  border: 1px solid #607d8b;
+  outline: none;
+  cursor: pointer;
+  color: #9c27b0;
+  font-size: 23px;
+}
+
+.container {
+  width: -webkit-fill-available;
+  float: left;
+  padding: 15px;
+}
+
+ul.notes {
+  width: -webkit-fill-available;
+  float: left;
+  list-style: none;
+  padding: 0;
+
+}
+
+ul.notes li {
+  width: -webkit-fill-available;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  line-height: 22px;
+  float: left;
+  position: relative;
+  padding: 14px 100px 0 14px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+ul.notes li .buttons {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.notes li .buttons button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: none;
+  position: relative;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+}
+
+ul.notes li .buttons button.remove {
+  color: #e91e63;
+}
+
+ul.notes li .buttons button.edit {
+  color: #009688;
+}
+
+
+ul.notes li .buttons button:last-of-type::before {
+  content: '';
+  width: 1px;
+  height: 38px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #edf0f1;
+}
+
+ul.notes:empty:after {
+  content: 'You have no notes yet! click the above button to create one';
+  position: absolute;
+  margin-top: 15px;
+  width: -webkit-fill-available;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.create_note {
+  width: fit-content;
+  position: absolute;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.create_note > .create_note_input {
+  border: none;
+  background: #efe8e8;
+  padding: 10px 10px;
+  outline-color: purple;
+
+}
+
+.create_note > .craete_note_btn {
+  border: none;
+  height: 35px;
+  width: 35px;
+  padding: 0px;
+  color: #fff;
+  border-radius: 4  px;
+  font-size: 18px;
+  background: purple;
+  cursor: pointer;
+  outline-color: purple;
+}
+
+.note_editor {
+  max-width: 400px;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.note_editor > .create_note_input {
+  border: 2px solid purple;
+  background: #efe8e8;
+  padding: 10px 10px;
+  outline-color: purple;
+  margin-bottom: 10px;
+  width: 80%;
+}
