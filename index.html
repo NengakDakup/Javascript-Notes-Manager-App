@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="assets/css/all.css">
   </head>
   <body>
+    <input type="checkbox" id="create_note_toggle" hidden>
     <header>
       <h1><i class="fa fa-list"></i> Notes Manager</h1>
-      <button type="button" id="addItem"><i class="fa fa-plus"></i></button>
+      <label for="create_note_toggle">
+        <i class="fa fa-plus" id="addItem"></i>
+      </label>
 
-      <div class="create_note">
+      <div class="create_note" hidden>
         <input type="text" placeholder="Enter note title here" class="create_note_input">
         <button type="button" class="craete_note_btn"><i class="fa fa-plus"></i></button>
       </div>
 
-      <div class="note_editor">
+      <div class="note_editor" hidden>
         <input type="text" placeholder="Enter note title here" class="create_note_input">
         <textarea name="name" rows="20" cols="40"></textarea>
         <button type="button" class="craete_note_btn">Save Note <i class="fa fa-plus"></i></button>
-        <button type="button" class="craete_note_btn">Discard Note <i class="fa fa-trash-alt"></i></button>
+        <button type="button" class="craete_note_btn">Close menu <i class="fa fa-trash-alt"></i></button>
       </div>
 
     </header>
