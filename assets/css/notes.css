@@ -138,6 +138,7 @@ ul.notes:empty:after {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  display: none;
 }
 
 .create_note > .create_note_input {
@@ -177,9 +178,10 @@ ul.notes:empty:after {
   top: 20%;
   transform: translateX(-50%);
   z-index: 10;
+  display: none;
 }
 
-.note_editor > .create_note_input {
+.note_editor > .create_note_input_main {
   border: 2px solid purple;
   background: #efe8e8;
   padding: 10px 10px;
@@ -193,6 +195,7 @@ ul.notes:empty:after {
   color: #fff;
   background: purple;
   padding: 10px;
+  cursor: pointer;
 }
 
 #create_note_toggle:checked ~ header .create_note {
