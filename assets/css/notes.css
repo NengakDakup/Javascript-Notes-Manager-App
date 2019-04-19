@@ -117,12 +117,14 @@ ul.notes li .buttons button:last-of-type::before {
 ul.notes:empty:after {
   content: 'You have no notes yet! click the above button to create one';
   position: absolute;
-  margin-top: 15px;
-  width: -webkit-fill-available;
-  display: block;
   text-align: center;
+  margin-top: 15px;
+  width: 80%;
+  display: block;
   font-size: 12px;
   color: #aaa;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .create_note {
