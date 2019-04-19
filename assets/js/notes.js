@@ -56,7 +56,7 @@ function renderNotes(title) {
   var editBtnicon = '<i class="fa fa-edit"></i>'; //declare the edit btn inner icon
   var deleteBtnicon = '<i class="fa fa-trash-alt"></i>'; //declare the idelete btn inner icon
 
-  var listContainer = document.querySelector('.notes');
+  var listContainer = document.querySelector('.notes'); //main ul container for list items
 
   //create the list item for the note
   var listNote = document.createElement('li');
@@ -66,7 +66,6 @@ function renderNotes(title) {
   //create the div where the buttons will stay
   var btnsDiv = document.createElement('div');
   btnsDiv.classList += 'buttons';
-
 
   //creating the buttons
   var editBtn = document.createElement('button'); //create the edit button
@@ -82,4 +81,22 @@ function renderNotes(title) {
   listNote.appendChild(btnsDiv);
 
   listContainer.insertBefore(listNote, listContainer.childNodes[0]);
+
+  document.querySelector('.remove').addEventListener("click", function(){
+    var liItem = this.parentNode.parentNode;
+    var ulItem = liItem.parentNode;
+    var value = liItem.innerText;
+
+    ulItem.removeChild(liItem);
+  });
+}
+
+
+
+function deleteNote() {
+  var liItem = this.parentNode.parentNode;
+  var ulItem = item.parentNode;
+  var value = liItem.innerText;
+
+  ulItem.removeChild(liItem);
 }
